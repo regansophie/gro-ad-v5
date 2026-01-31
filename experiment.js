@@ -688,7 +688,7 @@ function makeGumballPages(configList) {
 
   // Start with button disabled
   // Uncomment this for real thing
-  //disableNextButton();
+  disableNextButton();
 
   if (audioFile) {
     window.currentExposureAudio = new Audio(audioFile);
