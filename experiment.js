@@ -1535,7 +1535,7 @@ var prolific_completion_page = {
       </p>
 
       <p style="margin-top: 10px; font-size: 32px; font-weight: bold;">
-        <code>C2UKW0TN</code>
+        <code>C4LMH6MP</code>
       </p>
 
       <p style="margin-top: 30px;">
@@ -1649,8 +1649,8 @@ console.log(lexical_balance);
 //timeline.push(opening_instructions);
 
 //Uncomment lines below for prolific 
-//timeline.push(prolific_id_page);
-//timeline.push(opening_instructions_prolific);
+timeline.push(prolific_id_page);
+timeline.push(opening_instructions_prolific);
 
 
 
@@ -1697,10 +1697,10 @@ if (condition ===3){
 timeline.push(saving_screen);
 timeline.push(save_data);
 
-//timeline.push(prolific_completion_page);
+timeline.push(prolific_completion_page);
 
 //Uncomment for RPP
-timeline.push(credit_instructions);
+//timeline.push(credit_instructions);
 
 
 // ---------------------
