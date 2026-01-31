@@ -1315,7 +1315,7 @@ function makeAlienRollCall(configList) {
 var save_data = {
   type: jsPsychPipe,
   action: "save",
-  experiment_id: "B6IasZcWqpCp",  // <-- paste from DataPipe
+  experiment_id: "rPHJMpaLUQnK",  // <-- paste from DataPipe
   filename: function() {
     // e.g., sub-ABCD1234_gumballs_2025-11-15-1700.csv
     const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
