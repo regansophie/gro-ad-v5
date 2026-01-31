@@ -1584,7 +1584,7 @@ var pre_prediction_configs_2 = [{
 
 // Assign to one condition
 
-var condition = jsPsych.randomization.sampleWithoutReplacement([1,2,3], 1)[0];
+var condition = jsPsych.randomization.sampleWithoutReplacement([1,2], 1)[0];
 jsPsych.data.addProperties({ prediction_condition: condition });
 
 var speaker_con = jsPsych.randomization.sampleWithoutReplacement([0,1], 1)[0];
