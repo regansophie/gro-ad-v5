@@ -1630,7 +1630,7 @@ jsPsych.data.addProperties({ lexical_balance: lexical_balance });
 
 // lexical_balance == 0: green says sweets, yellow says candy
 // lexical_balance == 1: green says candy,  yellow says sweets
-const greenWord  = "candy",
+const greenWord  = "candy";
 const yellowWord = "sweets";
 
 const ALIEN_ROLLCALL = buildAlienRollCall({ greenWord, yellowWord });
