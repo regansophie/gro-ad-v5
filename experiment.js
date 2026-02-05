@@ -211,14 +211,35 @@ var gumball_configs_intro_p1 = [
       numRed: 0,
       numBlue: 0,
       specialAlien: 0,
-      headerText: "These are the aliens who live there.",
+      headerText: "These green aliens live here.",
+      audio: null  // no audio on this one
+    },
+            {
+      numRed: 0,
+      numBlue: 0,
+      specialAlien: 0,
+      headerText: "These yellow aliens are visiting from another planet.",
+      audio: null  // no audio on this one
+    },
+            {
+      numRed: 0,
+      numBlue: 0,
+      specialAlien: 0,
+      headerText: "On the green alien planet, they call gumballs candy.",
+      audio: null  // no audio on this one
+    },
+                {
+      numRed: 0,
+      numBlue: 0,
+      specialAlien: 0,
+      headerText: "On the yellow alien planet, they call gumballs sweets.",
       audio: null  // no audio on this one
     },
     {
       numRed: 0,
       numBlue: 0,
       specialAlien: 0,
-      headerText: "These aliens like gumballs.",
+      headerText: "All of these aliens like gumballs.",
       audio: null  // no audio on this one
     }
    ] 
@@ -688,7 +709,7 @@ function makeGumballPages(configList) {
 
   // Start with button disabled
   // Uncomment this for real thing
-  disableNextButton();
+  //disableNextButton();
 
   if (audioFile) {
     window.currentExposureAudio = new Audio(audioFile);
@@ -1092,10 +1113,10 @@ const GREEN_SPEAKER = {
 };
 
 const YELLOW_SPEAKER = {
-  1: "bill",
-  2: "sarah",
-  3: "will",
-  4: "matilda"
+  1: "patrick",
+  2: "megan",
+  3: "darren",
+  4: "laura"
 };
 
 
@@ -1535,7 +1556,7 @@ var prolific_completion_page = {
       </p>
 
       <p style="margin-top: 10px; font-size: 32px; font-weight: bold;">
-        <code>C4LMH6MP</code>
+        <code>C2UKW0TN</code>
       </p>
 
       <p style="margin-top: 30px;">
@@ -1584,7 +1605,7 @@ var pre_prediction_configs_2 = [{
 
 // Assign to one condition
 
-var condition = jsPsych.randomization.sampleWithoutReplacement([1,2], 1)[0];
+var condition = jsPsych.randomization.sampleWithoutReplacement([1], 1)[0];
 jsPsych.data.addProperties({ prediction_condition: condition });
 
 var speaker_con = jsPsych.randomization.sampleWithoutReplacement([0,1], 1)[0];
@@ -1609,8 +1630,8 @@ jsPsych.data.addProperties({ lexical_balance: lexical_balance });
 
 // lexical_balance == 0: green says sweets, yellow says candy
 // lexical_balance == 1: green says candy,  yellow says sweets
-const greenWord  = (lexical_balance === 0) ? "sweets" : "candy";
-const yellowWord = (lexical_balance === 0) ? "candy"  : "sweets";
+const greenWord  = "candy",
+const yellowWord = "sweets";
 
 const ALIEN_ROLLCALL = buildAlienRollCall({ greenWord, yellowWord });
 
@@ -1649,8 +1670,8 @@ console.log(lexical_balance);
 //timeline.push(opening_instructions);
 
 //Uncomment lines below for prolific 
-timeline.push(prolific_id_page);
-timeline.push(opening_instructions_prolific);
+//timeline.push(prolific_id_page);
+//timeline.push(opening_instructions_prolific);
 
 
 
@@ -1697,10 +1718,10 @@ if (condition ===3){
 timeline.push(saving_screen);
 timeline.push(save_data);
 
-timeline.push(prolific_completion_page);
+//timeline.push(prolific_completion_page);
 
 //Uncomment for RPP
-//timeline.push(credit_instructions);
+timeline.push(credit_instructions);
 
 
 // ---------------------
