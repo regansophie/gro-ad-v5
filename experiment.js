@@ -1556,7 +1556,7 @@ var prolific_completion_page = {
       </p>
 
       <p style="margin-top: 10px; font-size: 32px; font-weight: bold;">
-        <code>C2UKW0TN</code>
+        <code>C4LMH6MP</code>
       </p>
 
       <p style="margin-top: 30px;">
@@ -1605,7 +1605,7 @@ var pre_prediction_configs_2 = [{
 
 // Assign to one condition
 
-var condition = jsPsych.randomization.sampleWithoutReplacement([1], 1)[0];
+var condition = jsPsych.randomization.sampleWithoutReplacement([2], 1)[0];
 jsPsych.data.addProperties({ prediction_condition: condition });
 
 var speaker_con = jsPsych.randomization.sampleWithoutReplacement([0,1], 1)[0];
