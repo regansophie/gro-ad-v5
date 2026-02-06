@@ -709,7 +709,7 @@ function makeGumballPages(configList) {
 
   // Start with button disabled
   // Uncomment this for real thing
-  //disableNextButton();
+  disableNextButton();
 
   if (audioFile) {
     window.currentExposureAudio = new Audio(audioFile);
@@ -1670,8 +1670,8 @@ console.log(lexical_balance);
 //timeline.push(opening_instructions);
 
 //Uncomment lines below for prolific 
-//timeline.push(prolific_id_page);
-//timeline.push(opening_instructions_prolific);
+timeline.push(prolific_id_page);
+timeline.push(opening_instructions_prolific);
 
 
 
@@ -1686,8 +1686,6 @@ timeline.push(makeGumballPages(gumball_configs_intro_p2));
 if(condition == 1 || condition == 2 || condition == 3){
   timeline.push(makeGumballPages(gumball_configs_intro_2));
   timeline.push(makeGumballPages(configs_s1)); //group 1
-  timeline.push(makeGumballPages(transition_configs));
-  timeline.push(makeGumballPages(configs_s2)); // group 1 
 }
 
 //baseline
@@ -1718,10 +1716,10 @@ if (condition ===3){
 timeline.push(saving_screen);
 timeline.push(save_data);
 
-//timeline.push(prolific_completion_page);
+timeline.push(prolific_completion_page);
 
 //Uncomment for RPP
-timeline.push(credit_instructions);
+//timeline.push(credit_instructions);
 
 
 // ---------------------
