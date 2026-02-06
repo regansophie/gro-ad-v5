@@ -1675,7 +1675,7 @@ timeline.push(opening_instructions_prolific);
 
 
 
-//timeline.push(consent_block);
+timeline.push(consent_block);
 
 timeline.push(makeGumballPages(gumball_configs_intro_p1));
 
